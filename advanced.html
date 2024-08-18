@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .navbar a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #4285F4;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .search-container {
+            margin-top: 5%;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 300px;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .search-buttons {
+            margin-top: 10px;
+        }
+        .search-buttons input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-buttons input[type="submit"]:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Google Search</a>
+        <a href="images.html">Image Search</a>
+    </div>
+    <div class="search-container">
+        <form action="https://www.google.com/search">
+            <div class="form-group">
+                <label for="all">Find pages with all these words:</label>
+                <input type="text" id="all" name="as_q">
+            </div>
+            <div class="form-group">
+                <label for="exact">Find pages with this exact word or phrase:</label>
+                <input type="text" id="exact" name="as_epq">
+            </div>
+            <div class="form-group">
+                <label for="any">Find pages with any of these words:</label>
+                <input type="text" id="any" name="as_oq">
+            </div>
+            <div class="form-group">
+                <label for="none">Find pages with none of these words:</label>
+                <input type="text" id="none" name="as_eq">
+            </div>
+            <div class="search-buttons">
+                <input type="submit" value="Advanced Search">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
